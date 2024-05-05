@@ -1,0 +1,266 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    {% include 'partials/header.html' %}
+    <!--Caroussel-->
+    <div>
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner w">
+                <div class="carousel-item active">
+                    <img src="{% static 'assets/img/cur.png' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item w">
+                    <img src="{% static 'assets/img/cur2.jpg' %}" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item w">
+                    <img src="{% static 'assets/img/cur3.svg' %}" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!--Icons-->
+    <div class="container-fluid text-center py-5">
+        <div class="row">
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="{% static 'assets/img/bolsa.png' %}" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Cursos Senai</h1>
+                    <a href="#c" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="{% static 'assets/img/tel.png' %}" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Fale com a equipe</h1>
+                    <a href="#f" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+            <div class="col-xl-4 col-sm-12">
+                <div>
+                    <img src="{% static 'assets/img/lamp.png' %}" alt="bolsa" width="150px" height="150px">
+                </div>
+                <div>
+                    <h1 style="color: #014073;">Dúvidas Frequentes</h1>
+                    <a href="#d" class="bord border rounded-5 nav-link">>></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Sobre-->
+    <div class="row text-center py-5 back">
+        <h1 style="padding-bottom: 50px;">Sobre</h1>
+        <div class="col-xl-6 col-sm-12">
+            <p class="p px-5">
+                O Memorial de Guerra de Hove é um memorial da
+                Primeira Guerra Mundial projetado por Sir Edwin
+                Lutyens e localizado na Grand Avenue em Hove,
+                parte da cidade de Brighton e Hove, na costa sul da
+                Inglaterra. Hove foi o local de um dos primeiros
+                eventos de recrutamento no início da guerra e,
+                posteriormente, de vários hospitais militares. Mais
+                de 600 homens da cidade foram mortos durante a
+                guerra, um quarto deles apenas do regimento
+                local. Um comité do memorial de guerra foi
+                estabelecido em 1919 e Lutyens foi contratado
+                como arquiteto. Um projeto foi estabelecido em
+                1920 após duas propostas mal sucedidas; Lutyens
+                escolheu o local entre várias opções.
+            </p>
+        </div>
+        <div class="col-xl-6 col-sm-12">
+            <p class="p px-5">
+                O Memorial de Guerra de Hove é um memorial da
+                Primeira Guerra Mundial projetado por Sir Edwin
+                Lutyens e localizado na Grand Avenue em Hove,
+                parte da cidade de Brighton e Hove, na costa sul da
+                Inglaterra. Hove foi o local de um dos primeiros
+                eventos de recrutamento no início da guerra e,
+                posteriormente, de vários hospitais militares. Mais
+                de 600 homens da cidade foram mortos durante a
+                guerra, um quarto deles apenas do regimento
+                local. Um comité do memorial de guerra foi
+                estabelecido em 1919 e Lutyens foi contratado
+                como arquiteto. Um projeto foi estabelecido em
+                1920 após duas propostas mal sucedidas; Lutyens
+                escolheu o local entre várias opções.
+            </p>
+        </div>
+    </div>
+    <!--IMG-->
+    <div>
+        <img src="{% static 'assets/img/sena.jpg' %}" alt="senai" width="100%" height="auto">
+    </div>
+    <!--Cursos-->
+    <div id="c" class="back container-fluid text-center">
+        <h1 style="padding-top: 48px;">Cursos</h1>
+        <div class="row py-5">
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Excel</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$48,00</li>
+                        <li class="list-group-item li">Tempo de duração: 24h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Modelagem</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$112,00</li>
+                        <li class="list-group-item li">Tempo de duração: 60h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Cronometragem</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$80,00</li>
+                        <li class="list-group-item li">Tempo de duração: 40h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Administração</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$95,00</li>
+                        <li class="list-group-item li">Tempo de duração: 50h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Excel Nivel intermedário</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$72,00</li>
+                        <li class="list-group-item li">Tempo de duração: 40h</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex col-xl-4 col-sm-12 py-5">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="{% static 'assets/img/cu.png' %}" class="mx-auto" alt="..." width="200px" height="200px">
+                    <div class="card-body">
+                        <h5 class="card-title">Liderança</h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item li">3x R$32,00</li>
+                        <li class="list-group-item li">Tempo de duração: 12h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Senai-->
+    <div id="f" class="row justify-content-center a py-5">
+        <div class="col-xl-4 col-sm-12 img">
+            <img src="{% static 'assets/img/pfdt.jpg' %}" alt="." width="100%" height="auto">
+        </div>
+        <div class="col-xl-4 col-sm-12">
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="{% static 'assets/img/tel2.svg' %}" /></td>
+                    <td>Whatsapp</td>
+                </tr>
+            </table>
+            <p class="p">(99) 9999-9999</p>
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="{% static 'assets/img/ig.svg' %}" /></td>
+                    <td>Instagram</td>
+                </tr>
+            </table>
+            <p class="p">@senai</p>
+        </div>
+    </div>
+    <!--Perguntas-->
+    <div id="d" class="back py-5">
+        <div style="padding-bottom: 50px;" class="container">
+            <table>
+                <tr>
+                    <td><img width="60px" height="60px" src="{% static 'assets/img/lamp.png' %}"></td>
+                    <td class="p2">Dúvidas Frequentes</td>
+                </tr>
+            </table>
+        </div>
+        <div class="accordion container " id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <h3>Os cursos entregam certificado?</h3>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        Todos os cursos entregam certificado após a formação do aluno.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <h3>Como me matricular?</h3>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        Para quem quer estudar no SENAI e fazer um curso técnico, ingresso é por meio de pré-matrículas, 
+                        abertas semestralmente. Os alunos se cadastram 
+                        para participarem da seleção e entram em contato com a unidade.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <h3>Quais são as capacitações que os cursos oferecem?</h3>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body li">
+                        O SENAI oferece cursos de Qualificação Profissional Básica para profissionais 
+                        que buscam se preparar para uma profissão de acordo com o perfil requerido no 
+                        mercado de trabalho e compatíveis com a complexidade tecnológica.Privilegiando 
+                        o desenvolvimento do senso crítico, da autonomia de pensamento e da criatividade 
+                        na realização das atividades profissionais, os cursos podem tanto qualificar as 
+                        pessoas que ainda não têm competências da área profissional desejada, como oferecer 
+                        a oportunidade de requalificação profissional.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="hr"></div>
+    
+    {% include 'partials/footer.html' %}
+
+{% endblock %}
