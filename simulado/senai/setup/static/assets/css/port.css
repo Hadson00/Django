@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+.emp{
+    width: 100%;
+    height: 100vh;
+    background: url(../img/empresario2.svg ) no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.emp::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    z-index: 0;
+}
+.had{
+    font-size: 120px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    padding-top: 400px;
+    margin-left: 40px;
+    position: relative; 
+    z-index: 1; 
+}
+
+.sem{
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-left: 40px;
+    position: relative; 
+    z-index: 0; 
+}
+.sobre{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    background-color: #141414;
+    color: white;
+}
+.h1{
+    font-family: Corbel;
+    font-size: 50px;
+}
+.p{
+    font-family: Arial;
+    font-size: 20px;
+}
+.butd{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-start: 2;
+}
+.but{
+    text-decoration: none;
+    background-color: #9B9B9B;
+    border: 10px solid #9B9B9B;
+    color: white;
+    font-family: Arial;
+    font-size: 20px;
+    width: 50%;
+    margin-top: 30px;
+}
+.cert{
+    margin: 50px;
+}
+.certimg{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 0px 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.certp{
+    background-color: #141414;
+    font-family: Arial;
+    border: 2px solid #141414;
+    color: white;
+}
+.h2{
+    font-family: Corbel;
+    font-size: 30px;
+}
+.sec{
+    background-color: #141414;
+    color: white;
+    padding: 10px;
+}
+.jor{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.jor2{
+    display: grid;
+    text-align: end;
+    gap: 20px 0px;
+}
+.jor3{
+    display: grid;
+    text-align: start;
+    gap: 20px 0px;
+}
+.h{
+    font-family: Corbel;
+    font-size: 50px;
+    text-align: center;
+}
+.reflex{
+    text-align: center;
+    background-color: #141414;
+    color: white;
+    padding: 10px;
+}
+.reflexh{
+    font-family: Corbel;
+    font-size: 50px;
+}
+.reflexp{
+    font-family: Corbel;
+    font-size: 30px;
+}
+.fim{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-items: center;
+    justify-items: center;
+}
+.fimp{
+    padding: 20px;
+}

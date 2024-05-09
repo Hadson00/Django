@@ -1,0 +1,130 @@
+{% extends 'layout.html' %}
+{% load static %}
+{% block content %}
+    <!--Banner-->
+    <!-- {{lista()}} -->
+    <div>
+        <div class="banner">
+            <div class="nome">Hadson<br>Nepomuceno</div>
+            <div class="txt">Sem formação alguma</div>
+        </div>
+    </div>
+    <!--Sobre-->
+    <div class="container-fluid back py-5">
+        <div class="row sobre text-center ">
+            <div class="col-xl-6 col-sm-12">
+                <img class="img" src="{% static 'assets/img/IMG_20240206_173927.jpg' %} " alt=".." width="775.45px" height="600px">   
+            </div>
+            <div class="col-xl-6 col-sm-12">
+                <h1 class="py-4">Sobre</h1>
+                <p class="p">
+                    Olá, meu nome é Hadson, uma pessoa apaixonado pela tecnologia 
+                    e seus diversos caminhos e opções. Atualmente curso o terceiro ano do Ensino Médio, 
+                    juntamente com meu curso técnico de TI e Inglês. Meu processo de aprendizagem atualmente 
+                    está me satisfazendo bastante, buscando sempre aprimorar minhas habilidades e expandir meu 
+                    conhecimento nas áreas que me dedico. Ao final de todo o caminho educacional que tive até hoje, 
+                    espero ter aproveitado ao máximo minhas oportunidades, me dediquei bastante 
+                    e tenho certeza que me tornarei um excelente profissional
+                </p>
+            </div>
+        </div>
+    </div>
+    <!--Certificados-->
+    <div class="container py-5">
+        <div>
+            <h1>Certificados</h1>
+            <p class="p2">Aqui estão todos os certificados de formações executadas até o presente momento.</p>
+            <div class="container">
+                <div class="row text-center justify-content-center">
+                    <div class="card col-xl-4 col-sm-12 mx-5 p-0" style="width: 18rem;">
+                        <img src="{% static 'assets/img/equipe.svg' %}" class="card-img-top" alt="..." width="100%" height="auto">
+                        <div class="card-body back">
+                            <h5 class="card-title">Escola Monster High</h5>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-sm-12 mx-5 p-0" style="width: 18rem;">
+                        <img src="{% static 'assets/img/equipe2.svg' %}" class="card-img-top" alt="..." width="100%" height="auto">
+                        <div class="card-body back">
+                            <h5 class="card-title">Escola Corleone</h5>
+                        </div>
+                    </div>
+                    <div class="card col-xl-4 col-sm-12 mx-5 p-0" style="width: 18rem;">
+                         <img src="{% static 'assets/img/equipe3.svg' %}" class="card-img-top" alt="..." width="100%" height="auto">
+                         <div class="card-body back">
+                            <h5 class="card-title">Escola Hogwarts</h5>
+                         </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <!--Jornada-->
+    <div class="back py-5 text-center">
+        <div class="container">
+            <h1 style="margin-bottom: 50px;">Nossa Jornada</h1>
+            <div>
+                <div>
+                    <h2><b class="b">2023</b> Desenvolvedor Senior</h2>
+                    <p class="p2">
+                        Engenheiro de dados senior na empresa AWS
+                        inicio do contrato 03/2023 - até o momento
+                    </p>
+                </div>
+                <div> 
+                    <h2><b class="b">2022</b> Engenheiro de Dados</h2>
+                    <p class="p2">
+                        Engenheiro de dados na microsoft co. inicio
+                        contrato 03/2020 - 05/2022
+                    </p>
+                </div>
+                <div>
+                    <h2><b class="b">2020</b> Analista Jr.</h2>
+                    <p class="p2">
+                        Analista Jr. Totvs desempenhando papel de
+                        coleta de requisitos inicio - 01/2019 - 02/2020
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin: 0;">
+    <!--Frase-->
+    <div class="back py-5">
+        <div class="container text-center">
+            <h1>
+                "O talento vence jogos,<br>
+                mas só o trabaho em equipe ganha campeonatos."
+            </h1>
+            <p style="margin-top: 30px;" class="p2">- Michael Jordan</p>
+        </div>
+    </div>
+    <hr style="margin: 0;">
+    <!--Trabalhar-->
+    <div class="back py-5">
+        <div class="container">
+            <h1 style="margin-bottom: 30px;">Vamos Trabalhar Juntos!</h1>
+        </div>
+        <div class="container">
+            <div class="row sobre">
+                <div class="col-xl-6 col-sm-12">
+                    <img class="img-fluid" src="{% static 'assets/img/mao.jpg' %}" alt="mao" width="550" height="400">
+                </div>
+                <div class="col-xl-6 col-sm-12">
+                    <div>
+                        <h1>Linkedin</h1>
+                        <p>https://www.linkedin.com/in/hadson-nepo</p>
+                    </div>
+                    <div>
+                        <h1>Telefone</h1>
+                        <p>8002-4922</p>
+                    </div>
+                    <div>
+                        <h1>GitHub</h1>
+                        <p>https://www.github.com/HNepo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'partials/footer.html' %}
+{% endblock %}

@@ -3,10 +3,10 @@ from django.db import models
 
 # Create your models here.
 class Site(models.Model):
-    nome_card = models.CharField(max_length=200)
-    description =  models.TextField()
-    path = models.TextField()
-    primeiro_texto = models.TextField()
-    segundo_texto = models.TextField()
-    alunos = models.IntegerField()
-    date_create = models.DateTimeField(default=datetime.now, blank =True)
+    idCliente = models.CharField(max_length=100)
+    nome =  models.CharField(max_length=45)
+    cpf = models.CharField(max_length=11)
+    endereco = models.CharField(max_length=45)
+    telefone = models.CharField(max_length=11)
+    dataNascimento = models.DateField()
+    email = models.EmailField()
