@@ -1,4 +1,3 @@
-from datetime import datetime
 from django.db import models
 
 # Create your models here.
@@ -8,5 +7,5 @@ class Site(models.Model):
     cpf = models.CharField(max_length=11)
     endereco = models.CharField(max_length=45)
     telefone = models.CharField(max_length=11)
-    dataNascimento = models.DateField()
     email = models.EmailField()
+    path = models.ImageField(upload_to = 'imagens/')

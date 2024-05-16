@@ -1,10 +1,18 @@
 from django.shortcuts import render
-from django.http import HttpResponse
+from .forms import *
+from .models import *
 
 # Create your views here.
 
 def index(request):
-    return HttpResponse('<h1>Ola Mundo</h1>')
-
-def pagina(request):
     return render(request,'index.html')
+
+def variavel(request):
+    form = SiteForm
+    if request.method == 'POST':
+        form = SiteForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+    x = Site.objects.all()
+
+    return render(request, 'var.html',{'users':x, 'form':form})

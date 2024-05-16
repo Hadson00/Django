@@ -4,5 +4,6 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name = 'index'),
-    path('pagina/', views.pagina, name='pagina')
+    path('variavel/', views.variavel, name='exibir_variavel'),
+    path('cadastro/', views.variavel, name='cadastro_variavel')
 ]
