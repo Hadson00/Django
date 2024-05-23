@@ -1,0 +1,110 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title%}
+    {% endblock %}
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+    <script src="{% static 'assets/js/bootstrap.bundle.js' %}"></script>
+    <style>
+        .t {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 25px;
+        }
+
+        .w {
+            width: 100%;
+            height: 100vh;
+        }
+
+        .bord {
+            background-color: #014073;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: white;
+            width: 100px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .j {
+            justify-content: center;
+        }
+
+        .back {
+            background-color: #014073;
+            color: white;
+        }
+
+        .p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+        }
+
+        .li{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 20px;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+        .p2{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: white;
+        }
+        td {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 30px;
+            color: #014073;
+        }
+        .a{
+            align-items: center;
+        }
+        .img{
+            margin-bottom: 0;
+        }
+        .hr{
+            display: block;
+            unicode-bidi: isolate;
+            margin-inline-start: auto;
+            margin-inline-end: auto;
+            overflow: hidden;
+            border-style: inset;
+            border-width: 1px;
+        }
+        .i{
+            object-fit: cover;
+        }
+        @media screen and (max-width: 600px) {
+            .row {
+                margin-right: 0;
+            }
+
+            .w {
+                height: auto;
+            }
+            .img{
+                margin-bottom: 30px;
+            }
+            .a{
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            table{
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
